@@ -358,7 +358,7 @@
             }
         });
 
-        // --- BACKEND ENTEGRASYONU ---
+// --- BACKEND ENTEGRASYONU ---
         submitWalletBtn.addEventListener('click', async () => {
             const username = xInput.value.trim();
             const wallet = walletAddressInput.value.trim();
@@ -373,8 +373,8 @@
             submitWalletBtn.innerText = "SENDING...";
 
             try {
-                // Sunucuya veri gönderme (POST request)
-                const response = await fetch(''https://sitetest-421g.onrender.com/api/save-wallet', {
+                // DÜZELTME BURADA YAPILDI (Tek tırnak sorunu giderildi)
+                const response = await fetch('https://sitetest-421g.onrender.com/api/save-wallet', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
